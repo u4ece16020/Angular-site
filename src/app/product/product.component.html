@@ -1,0 +1,19 @@
+<!-- <p>product works!</p> -->
+<div class="main">
+<div class="maindiv">
+    <div class="img">
+        <a href="/product/{{idVal}}"><img src="{{prdData[idVal-1].img}}" alt=""></a>
+    </div>
+    <div class="details">
+        <div class="prodname"> <a href="/product/{{idVal}}">{{prdData[idVal-1].prdName}}</a></div>
+        <div class="cost">
+            <div class="nowcost">{{prdData[idVal-1].nowPrice}}</div>
+            <div class="l-through" id="mrpcost">{{prdData[idVal-1].mrp}}</div>
+        </div>
+    </div>
+</div>
+<div class="contentdiv">
+    {{prdData[idVal-1].des}}
+</div>
+</div>
+
